@@ -10,7 +10,7 @@
         paiement2.AfficherDetails();
         paiement3.AfficherDetails();
     
-        Console.WriteLine(Console.ReadLine());
+          Console.WriteLine(Console.ReadLine());
 
         
         PayPal paiement4 = new PayPal(150.0, "Paiement de Hotel", "yassin@gmail.com");
@@ -18,7 +18,19 @@
 
         paiement4.AfficherDetails();
         paiement5.AfficherDetails();
-        
+
+          Console.WriteLine(Console.ReadLine());
+
+
+        Utilisateur utilisateur = new Utilisateur("kaab");
+
+        CarteCredit carte = new CarteCredit(50.0, "Achat sur Amazon", 584929);
+        PayPal paypal = new PayPal(150.0, "Paiement de hotel", "kaab@gmail.com");
+
+        utilisateur.AjouterPaiement(carte);
+        utilisateur.AjouterPaiement(paypal);
+
+
     }
 
     

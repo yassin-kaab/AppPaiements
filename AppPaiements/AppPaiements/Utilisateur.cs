@@ -9,13 +9,16 @@
         Paiements = new List<Paiement>();
     }
 
-    public void AjouterPaiement(Paiement paiement)
+    public virtual void AjouterPaiement(Paiement paiement)
     {
         Paiements.Add(paiement);
+        Console.WriteLine("Paiment valider");
     }
 
-    public void Afficherinfo()
+    public virtual void Afficherinfo()
     {
+        Console.WriteLine($"Nom d'utilisateur: {Nom}");
+        Console.WriteLine($"Paiement: {Paiements}");
         foreach (var paiement in Paiements)
         {
             paiement.AfficherDetails();

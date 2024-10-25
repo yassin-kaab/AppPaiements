@@ -26,7 +26,7 @@
 
         CarteCredit carte = new CarteCredit(50.0, "Achat sur Amazon", 584929);
         PayPal paypal = new PayPal(150.0, "Paiement de hotel", "kaab@gmail.com");
-
+        utilisateur.Afficherinfo();
         utilisateur.AjouterPaiement(carte);
         utilisateur.AjouterPaiement(paypal);
 

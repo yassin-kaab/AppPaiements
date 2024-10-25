@@ -23,12 +23,14 @@
 
 
         Utilisateur utilisateur = new Utilisateur("kaab");
-
-        CarteCredit carte = new CarteCredit(50.0, "Achat sur Amazon", 584929);
-        PayPal paypal = new PayPal(150.0, "Paiement de hotel", "kaab@gmail.com");
         utilisateur.Afficherinfo();
-        utilisateur.AjouterPaiement(carte);
-        utilisateur.AjouterPaiement(paypal);
+        utilisateur.AjouterPaiement(paiement1);
+        utilisateur.AjouterPaiement(paiement2);
+        utilisateur.AjouterPaiement(paiement3);
+        utilisateur.AjouterPaiement(paiement4);
+        utilisateur.AjouterPaiement(paiement5);
+         Console.WriteLine(Console.ReadLine());
+        utilisateur.Afficherinfo();
 
 
     }
